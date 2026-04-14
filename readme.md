@@ -197,60 +197,57 @@ No zombie container processes should remain.
 
 The following screenshots demonstrate that the runtime satisfies project requirements.
 
-----------
+---
 
 ## 1. Multi-container supervision
 
-```
 ![Two containers running under supervisor](images/Picture1.png)
 
-----------
+---
 
 ## 2. Metadata tracking
 
-Example:
+![Metadata available](images/Picture2.png)
 
-```bash
-![Metadata available](images/Picture1.png)
-
-----------
+---
 
 ## 3. Bounded-buffer logging
 
-![Two containers running under supervisor](images/3.png)
+![Logging pipeline output](images/3.png)
 
-----------
+---
 
 ## 4. CLI and IPC communication
 
-![supervisor giving a response](images/4.png)
+![Supervisor responding to CLI request](images/4.png)
 
-----------
+---
 
 ## 5. Soft-limit warning
 
-![starting the memory test](images/5.png)
-![soft limit and hard limit response from supervisor](images/6.png)
+![Starting memory test](images/5.png)
 
-----------
+![Soft limit warning from kernel monitor](images/6.png)
+
+---
 
 ## 6. Hard-limit enforcement
 
-![killed process appears](images/6_actually.png)
+![Container killed after exceeding hard limit](images/6_actually.png)
 
-----------
+---
 
 ## 7. Scheduling experiment
 
-![increased memory usage](images/7.png)
+![Scheduling experiment results](images/7.png)
 
-----------
+---
 
 ## 8. Clean teardown
 
-![stopping processes](images/8_1.png)
-![no "Z" zombie processes](images/8_2.png)
+![Stopping processes](images/8_1.png)
 
+![No zombie processes remaining](images/8_2.png)
 ----------
 
 # 3. Engineering Analysis
